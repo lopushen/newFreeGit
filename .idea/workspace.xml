@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="b478f53e-04f2-4abe-8224-ef0b171eda08" name="Default" comment="Initial project commit">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+=======
+    <list default="true" id="b478f53e-04f2-4abe-8224-ef0b171eda08" name="Default" comment="Initial project commit" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
     <list default="true" id="b478f53e-04f2-4abe-8224-ef0b171eda08" name="Default" comment="Initial project commit" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -25,8 +29,12 @@
     <file path="/ServieConstants.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408316760403" ignored="false" />
     <file path="/common.properties" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408317274863" ignored="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <file path="/Dummy.txt" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408318565471" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408318348342" ignored="false" />
+=======
+    <file path="/Dummy.txt" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408321742257" ignored="false" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
     <file path="/Dummy.txt" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408321742257" ignored="false" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -45,6 +53,10 @@
   </component>
   <component name="DebuggerManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -85,7 +97,10 @@
       </breakpoint>
     </breakpoint_any>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+=======
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     <breakpoint_rules />
@@ -138,9 +153,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="77" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+              <folding />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
               <folding />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -152,7 +171,11 @@
         <entry file="file://$PROJECT_DIR$/src/com/elance/data/CompanyDataFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state line="17" column="83" selection-start="483" selection-end="483" vertical-scroll-proportion="0.51373625">
+=======
+            <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
             <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -207,7 +230,11 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -273,8 +300,11 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
+=======
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
       <pane id="ProjectPane">
@@ -304,9 +334,12 @@
             </PATH_ELEMENT>
           </PATH>
 <<<<<<< HEAD
+<<<<<<< HEAD
         </subPane>
       </pane>
 =======
+=======
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="newfree" />
@@ -365,6 +398,9 @@
       </pane>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+<<<<<<< HEAD
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+=======
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     </panes>
   </component>
@@ -377,7 +413,11 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -566,7 +606,11 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="770" extended-state="0" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <editor active="true" />
+=======
+    <editor active="false" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
     <editor active="false" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -579,8 +623,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -589,7 +637,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.6704731" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -598,6 +650,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -674,9 +730,13 @@
     <entry file="file://$PROJECT_DIR$/src/com/elance/gui/ReportTypePanel.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state line="161" column="39" selection-start="4290" selection-end="4305" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+=======
+        <state line="161" column="39" selection-start="4290" selection-end="4305" vertical-scroll-proportion="0.0" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
         <state line="161" column="39" selection-start="4290" selection-end="4305" vertical-scroll-proportion="0.0" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -692,9 +752,13 @@
     <entry file="file://$PROJECT_DIR$/src/com/elance/gui/CompanyPanel.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state line="35" column="49" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+=======
+        <state line="35" column="49" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
         <state line="35" column="49" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -703,9 +767,13 @@
     <entry file="file://$PROJECT_DIR$/src/com/elance/utils/FileDataGetter.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state line="10" column="39" selection-start="241" selection-end="256" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+=======
+        <state line="10" column="39" selection-start="241" selection-end="256" vertical-scroll-proportion="0.0" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
         <state line="10" column="39" selection-start="241" selection-end="256" vertical-scroll-proportion="0.0" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -719,9 +787,13 @@
     <entry file="file://$PROJECT_DIR$/src/com/elance/gui/YearRangePanel.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state line="114" column="75" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+=======
+        <state line="114" column="75" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0" />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
         <state line="114" column="75" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0" />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -787,9 +859,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="77" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+          <folding />
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
           <folding />
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
@@ -799,7 +875,11 @@
     <entry file="file://$PROJECT_DIR$/src/com/elance/data/CompanyDataFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state line="17" column="83" selection-start="483" selection-end="483" vertical-scroll-proportion="0.51373625">
+=======
+        <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
+>>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
 =======
         <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
 >>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
