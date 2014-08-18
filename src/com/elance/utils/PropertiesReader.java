@@ -17,6 +17,7 @@ public final class PropertiesReader {
     public static PropertiesReader getInstance() {
         if (propertiesReader == null) {
             propertiesReader = new PropertiesReader();
+            propertiesReader.readProperties();
         }
         return propertiesReader;
     }

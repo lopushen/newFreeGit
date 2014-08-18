@@ -1,6 +1,7 @@
 package com.elance.utils;
 
 
+import com.elance.gui.CheckBoxReportTypePanel;
 import com.elance.gui.CompanyPanel;
 import com.elance.gui.FormatPanel;
 import com.elance.gui.KeyWordsPanel;
@@ -15,11 +16,11 @@ public class DataGatherer {
     private CompanyPanel companyPanel;
     private KeyWordsPanel keyWordsPanel;
     private FormatPanel formatPanel;
-    private ReportTypePanel reportTypePanel;
+    private CheckBoxReportTypePanel reportTypePanel;
     private YearRangePanel yearRangePanel;
 
     public DataGatherer(CompanyPanel companyPanel, KeyWordsPanel keyWordsPanel,
-                        FormatPanel formatPanel, ReportTypePanel reportTypePanel, YearRangePanel yearRangePanel) {
+                        FormatPanel formatPanel, CheckBoxReportTypePanel reportTypePanel, YearRangePanel yearRangePanel) {
         this.companyPanel = companyPanel;
         this.keyWordsPanel = keyWordsPanel;
         this.formatPanel = formatPanel;
@@ -39,7 +40,7 @@ public class DataGatherer {
 
     private List<Row> getInputRows() {
         String company = companyPanel.getCompanyName();
-        List<String> reportTypes = reportTypePanel.getSelectedData();
+        List<String> reportTypes = reportTypePanel.getSelectedReportTypes();
         List<String> years = yearRangePanel.getYears();
         String format = formatPanel.getFormat();
         List<Row> inputRows = new ArrayList<>();

@@ -1,43 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
     <list default="true" id="b478f53e-04f2-4abe-8224-ef0b171eda08" name="Default" comment="Initial project commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/elance/gui/CheckBoxReportTypePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/elance/utils/DataGatherer.java" afterPath="$PROJECT_DIR$/src/com/elance/utils/DataGatherer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/elance/gui/MyFrame.java" afterPath="$PROJECT_DIR$/src/com/elance/gui/MyFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java" afterPath="$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/elance/gui/ReportTypePanel.java" afterPath="$PROJECT_DIR$/src/com/elance/gui/ReportTypePanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/companies_data.txt" afterPath="$PROJECT_DIR$/companies_data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-=======
-    <list default="true" id="b478f53e-04f2-4abe-8224-ef0b171eda08" name="Default" comment="Initial project commit" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-    <list default="true" id="b478f53e-04f2-4abe-8224-ef0b171eda08" name="Default" comment="Initial project commit" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     <ignored path="newfree.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MyFrame.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408211791622" ignored="false" />
+    <file path="/MyFrame.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408402586151" ignored="false" />
     <file path="/FileDataGetter.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408212036768" ignored="false" />
     <file path="/HtmlScraper.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408215764049" ignored="false" />
-    <file path="/fragment.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408316750587" ignored="false" />
+    <file path="/fragment.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408401615422" ignored="false" />
     <file path="/a.dummy" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408307700453" ignored="false" />
     <file path="/Row.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408315936117" ignored="false" />
-    <file path="/DataGatherer.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408314225135" ignored="false" />
+    <file path="/DataGatherer.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408402676636" ignored="false" />
     <file path="/YearRangePanel.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408313962284" ignored="false" />
     <file path="/CsvParser.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408316004985" ignored="false" />
     <file path="/ErrorMessageShower.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408314716973" ignored="false" />
     <file path="/RowMatcher.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408317343817" ignored="false" />
-    <file path="/PropertiesReader.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408316887504" ignored="false" />
+    <file path="/PropertiesReader.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408401858086" ignored="false" />
     <file path="/ServieConstants.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408316760403" ignored="false" />
     <file path="/common.properties" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408317274863" ignored="false" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <file path="/Dummy.txt" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408318565471" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408318348342" ignored="false" />
-=======
-    <file path="/Dummy.txt" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408321742257" ignored="false" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-    <file path="/Dummy.txt" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408321742257" ignored="false" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+    <file path="/Dummy.txt" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408400568383" ignored="false" />
+    <file path="/ReportTypePanel.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408400889719" ignored="false" />
+    <file path="/CheckBoxReportTypePanel.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408402796862" ignored="false" />
+    <file path="/a.java" changelist="b478f53e-04f2-4abe-8224-ef0b171eda08" time="1408401048885" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,14 +46,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -96,13 +83,68 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-=======
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/elance/utils/RowMatcher.java" line="11" class="com.elance.utils.RowMatcher" package="com.elance.utils">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java" line="42" class="com.elance.utils.PropertiesReader" package="com.elance.utils">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/elance/utils/ReportsController.java" line="7" class="com.elance.utils.ReportsController" package="com.elance.utils">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/elance/utils/RowMatcher.java" line="23" class="com.elance.utils.RowMatcher" package="com.elance.utils">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -112,10 +154,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="ReportTypePanel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/elance/gui/ReportTypePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="66" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyFrame.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/elance/gui/MyFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="149" column="96" selection-start="4374" selection-end="4374" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportsController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/elance/utils/ReportsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DataGatherer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elance/utils/DataGatherer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="25" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
+            <state line="42" column="75" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckBoxReportTypePanel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/elance/gui/CheckBoxReportTypePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Container.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_01/src.zip!/java/awt/Container.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="408" column="21" selection-start="13984" selection-end="13984" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RowMatcher.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/elance/utils/RowMatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="55" selection-start="106" selection-end="106" vertical-scroll-proportion="0.317757">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="companyNames" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/companyNames">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,61 +231,7 @@
       <file leaf-file-name="companies_data.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/companies_data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Row.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elance/utils/Row.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="11" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CsvParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elance/utils/CsvParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="289" selection-end="298" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RowMatcher.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elance/utils/RowMatcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="77" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-=======
-              <folding />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-              <folding />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyDataFileParser.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/elance/data/CompanyDataFileParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state line="17" column="83" selection-start="483" selection-end="483" vertical-scroll-proportion="0.51373625">
-=======
-            <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-            <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+            <state line="2" column="22" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,34 +240,7 @@
       <file leaf-file-name="PropertiesReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="197" selection-end="213" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceConstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elance/utils/ServiceConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="19" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="8" selection-start="34" selection-end="42" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorMessageShower.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/elance/utils/ErrorMessageShower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="31" selection-start="103" selection-end="121" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -229,15 +255,7 @@
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
-<<<<<<< HEAD
-<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-=======
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="buffer" />
@@ -253,19 +271,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/elance/gui/MyFrame.java" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/FileDataGetter.java" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/HtmlScraper.java" />
         <option value="$PROJECT_DIR$/src/com/elance/gui/YearRangePanel.java" />
-        <option value="$PROJECT_DIR$/src/com/elance/utils/DataGatherer.java" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/ErrorMessageShower.java" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/Row.java" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/CsvParser.java" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/ServieConstants.java" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/ServiceConstants.java" />
-        <option value="$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java" />
         <option value="$PROJECT_DIR$/common.properties" />
         <option value="$PROJECT_DIR$/src/com/elance/utils/RowMatcher.java" />
+        <option value="$PROJECT_DIR$/src/com/elance/gui/ReportTypePanel.java" />
+        <option value="$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java" />
+        <option value="$PROJECT_DIR$/companies_data.txt" />
+        <option value="$PROJECT_DIR$/src/com/elance/gui/MyFrame.java" />
+        <option value="$PROJECT_DIR$/src/com/elance/utils/DataGatherer.java" />
+        <option value="$PROJECT_DIR$/src/com/elance/gui/CheckBoxReportTypePanel.java" />
       </list>
     </option>
   </component>
@@ -299,14 +320,8 @@
       <sortByType />
     </navigator>
     <panes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-=======
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,14 +329,6 @@
               <option name="myItemId" value="newfree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.7 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -329,32 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newfree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </subPane>
-      </pane>
-=======
-=======
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newfree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newfree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="elance" />
+              <option name="myItemId" value="newFreeGit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,7 +346,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newfree" />
+              <option name="myItemId" value="newFreeGit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -376,7 +358,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,22 +368,86 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="newfree" />
+              <option name="myItemId" value="newFreeGit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PDFParser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newfree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newFreeGit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newfree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newFreeGit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elance" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newfree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newFreeGit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elance" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-<<<<<<< HEAD
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,16 +457,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-=======
+    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -444,7 +482,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="newfree" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -605,58 +649,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="770" extended-state="0" />
-<<<<<<< HEAD
-<<<<<<< HEAD
     <editor active="true" />
-=======
-    <editor active="false" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-    <editor active="false" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39967373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-=======
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.6704731" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.67154473" order="0" side_tool="false" content_ui="combo" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.60032624" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -727,162 +739,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/ReportTypePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state line="161" column="39" selection-start="4290" selection-end="4305" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-=======
-        <state line="161" column="39" selection-start="4290" selection-end="4305" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-        <state line="161" column="39" selection-start="4290" selection-end="4305" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/MyFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="634" selection-end="823" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/CompanyPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state line="35" column="49" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-=======
-        <state line="35" column="49" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-        <state line="35" column="49" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/FileDataGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state line="10" column="39" selection-start="241" selection-end="256" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-=======
-        <state line="10" column="39" selection-start="241" selection-end="256" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-        <state line="10" column="39" selection-start="241" selection-end="256" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_01/src.zip!/javax/swing/JComboBox.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="600" column="18" selection-start="20136" selection-end="20136" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/YearRangePanel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/ServiceConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state line="114" column="75" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-=======
-        <state line="114" column="75" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-        <state line="114" column="75" selection-start="3287" selection-end="3287" vertical-scroll-proportion="0.0" />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/DataGatherer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="25" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/Row.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+        <state line="7" column="31" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elance/utils/CsvParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="289" selection-end="298" vertical-scroll-proportion="0.0">
+        <state line="14" column="27" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/companies_data.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/ResultTablePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="197" selection-end="213" vertical-scroll-proportion="0.0">
+        <state line="13" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.2647975">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="34" selection-end="42" vertical-scroll-proportion="0.0">
+        <state line="0" column="9" selection-start="0" selection-end="9" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/ErrorMessageShower.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/FormatPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="103" selection-end="121" vertical-scroll-proportion="0.0">
+        <state line="8" column="13" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/ServiceConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/ReportTypePanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+        <state line="32" column="66" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/companies_data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/companyNames">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/DataGatherer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="75" selection-start="1549" selection-end="1549" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_01/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="408" column="21" selection-start="13984" selection-end="13984" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/PropertiesReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/MyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="96" selection-start="4374" selection-end="4374" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elance/gui/CheckBoxReportTypePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/elance/utils/ReportsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/elance/utils/RowMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="77" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-=======
-          <folding />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-          <folding />
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/elance/data/CompanyDataFileParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state line="17" column="83" selection-start="483" selection-end="483" vertical-scroll-proportion="0.51373625">
-=======
-        <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
-=======
-        <state line="54" column="81" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.4416962">
->>>>>>> b3dd1bb1a93bbffa66414e2908c907c0f27bb90d
+        <state line="7" column="55" selection-start="106" selection-end="106" vertical-scroll-proportion="0.317757">
           <folding />
         </state>
       </provider>

@@ -16,6 +16,7 @@ import javax.swing.border.TitledBorder;
 import com.elance.data.CompanyDataFileParser;
 import com.elance.data.KeyValueData;
 import com.elance.data.ReportTypeFileParser;
+import com.elance.utils.DataGatherer;
 import com.elance.utils.ReportsController;
 import com.elance.utils.Row;
 
@@ -36,7 +37,7 @@ public class MyFrame extends JFrame {
 	private CompanyPanel companyPanel;
 	private KeyWordsPanel keyWordsPanel;
 	private FormatPanel formatPanel;
-	private ReportTypePanel reportTypePanel;
+	private CheckBoxReportTypePanel reportTypePanel;
 	private YearRangePanel yearRangePanel;
 	private JPanel goButtonPanel;
 
@@ -96,7 +97,7 @@ public class MyFrame extends JFrame {
 		formatPanel.setBorder(new TitledBorder(FormatPanel.PANEL_NAME));
 		yearRangePanel = new YearRangePanel();
 		yearRangePanel.setBorder(new TitledBorder(YearRangePanel.PANEL_NAME));
-		reportTypePanel = new ReportTypePanel(reportTypes);
+		reportTypePanel = new CheckBoxReportTypePanel(reportTypes);
 		reportTypePanel.setBorder(new TitledBorder(ReportTypePanel.PANEL_NAME));
 
 		
@@ -108,6 +109,7 @@ public class MyFrame extends JFrame {
 		
 		resultTablePanel = new ResultTablePanel();
 		resultTablePanel.setBorder(new TitledBorder("Results"));
+        //DataGatherer dataGatherer = new DataGatherer(companyPanel, keyWordsPanel, formatPanel, reportTypePanel, yearRangePanel);
 	}
 	
 	private void addComponentsToLeftBoxContainer(){
@@ -141,7 +143,7 @@ public class MyFrame extends JFrame {
 				
 
 				String company = companyPanel.getCompanyName();
-		        List<String> reportTypes = reportTypePanel.getSelectedData();
+		        List<String> reportTypes = reportTypePanel.getSelectedReportTypes();
 		        List<String> years = yearRangePanel.getYears();
 		        String format = formatPanel.getFormat();
 				

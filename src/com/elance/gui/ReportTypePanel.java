@@ -46,6 +46,8 @@ public class ReportTypePanel extends JPanel{
 	
 	private List<String> items;
 
+    List<JComboBox> comboBoxes = new ArrayList<>();
+
 	public ReportTypePanel(List<String> items) {
 		this.items = new ArrayList<>();
 		this.items.add("");
