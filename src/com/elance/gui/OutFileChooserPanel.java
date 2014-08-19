@@ -9,8 +9,8 @@ public class OutFileChooserPanel extends FileChooserPanel {
 	 */
 	private static final long serialVersionUID = -7028083678144074246L;
 	
-	public OutFileChooserPanel(){
-		super();
+	public OutFileChooserPanel(String propertyName){
+		super(propertyName);
 	}
 	
 	protected void initFileChooser(){

@@ -12,6 +12,8 @@ import javax.swing.JTextField;
 
 import org.apache.pdfbox.util.ExtensionFileFilter;
 
+import com.elance.utils.PropertiesReader;
+
 public class FileChooserPanel extends JPanel  {
 
 	/**
@@ -31,8 +33,10 @@ public class FileChooserPanel extends JPanel  {
 	
 	private File file;
 	
-	public FileChooserPanel(){
-		
+	private String propertyName;
+	
+	public FileChooserPanel(String propertyName){
+		this.propertyName = propertyName;
 		initFileChooser();
 		initChooseButton();
 		initFilePathTextField();
@@ -82,6 +86,11 @@ public class FileChooserPanel extends JPanel  {
 			if(temp_file != null){
 				file = temp_file;
 				chosenFilePathTextField.setText(file.getAbsolutePath());
+				
+				String path = file.getAbsolutePath();
+				String base = new File(".").getAbsolutePath();
+				String relative = new File(base).toURI().relativize(new File(path).toURI()).getPath();
+				PropertiesReader.getInstance().updateProperty(propertyName, relative);
 			}
 		}
 	}

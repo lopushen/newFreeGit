@@ -16,6 +16,7 @@ import javax.swing.border.TitledBorder;
 import com.elance.data.CompanyDataFileParser;
 import com.elance.data.KeyValueData;
 import com.elance.data.ReportTypeFileParser;
+import com.elance.utils.PropertiesReader;
 import com.elance.utils.ReportsController;
 import com.elance.utils.Row;
 
@@ -100,10 +101,10 @@ public class MyFrame extends JFrame {
 		reportTypePanel.setBorder(new TitledBorder(ReportTypePanel.PANEL_NAME));
 
 		
-		inFileChooserPanel = new FileChooserPanel();
+		inFileChooserPanel = new FileChooserPanel(PropertiesReader.INPUT_PROPERTY_NAME);
 		inFileChooserPanel.setBorder(new TitledBorder("Input file"));
 		
-		outFileChooserPanel = new OutFileChooserPanel();
+		outFileChooserPanel = new OutFileChooserPanel(PropertiesReader.OUTPUT_PROPERTY_NAME);
 		outFileChooserPanel.setBorder(new TitledBorder("Output folder"));
 		
 		resultTablePanel = new ResultTablePanel();

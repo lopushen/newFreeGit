@@ -7,9 +7,15 @@ import java.io.InputStream;
 import java.util.Properties;
 
 public final class PropertiesReader {
-    private Properties prop;
+    
+	public static final String INPUT_PROPERTY_NAME = "inputPath";
+	public static final String OUTPUT_PROPERTY_NAME = "outputPath";
+	
+	private Properties prop;
     private static PropertiesReader propertiesReader;
 
+    
+    
 	private PropertiesReader(){
 		prop = new Properties();
 	}

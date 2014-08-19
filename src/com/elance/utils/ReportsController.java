@@ -8,4 +8,5 @@ public class ReportsController {
 		List<Row> inputRows = DataGatherer.getInputRows(company, reportTypes, years, format);
 		return RowMatcher.findMatchingRows(inputRows);
 	}
+	
 }
