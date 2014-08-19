@@ -1,3 +1,3 @@
-company1; www.url.com
-company12; www.url2.com
-company14; www.url3.com
+BHP Billiton; www.url.com
+Rio Tinto; www.url2.com
+Anglo American; www.url3.com
