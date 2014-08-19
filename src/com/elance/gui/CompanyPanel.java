@@ -116,7 +116,7 @@ public class CompanyPanel extends JPanel {
 			Vector<String> sieved = new Vector<>();
 			
 			for (String value : data) {
-				if(value.contains(key)){
+				if(value.toLowerCase().contains(key.toLowerCase())){
 					sieved.add(value);
 				}
 			}

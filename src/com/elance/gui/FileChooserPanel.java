@@ -29,7 +29,7 @@ public class FileChooserPanel extends JPanel  {
 	protected JFileChooser fileChooser;
 	
 	private JButton chooseButton;
-	private JTextField chosenFilePathTextField;
+	protected JTextField chosenFilePathTextField;
 	
 	private File file;
 	
@@ -43,9 +43,12 @@ public class FileChooserPanel extends JPanel  {
 		
 		add(chosenFilePathTextField);
 		add(chooseButton);
+        fileChooser.setCurrentDirectory(new File(getDefaultDir()));
+        chosenFilePathTextField.setText(getDefaultDir());
+
 	}
-	
-	public File getFile(){
+
+    public File getFile(){
 		return file;
 	}
 	
@@ -94,7 +97,9 @@ public class FileChooserPanel extends JPanel  {
 			}
 		}
 	}
-	
+    protected String getDefaultDir() {
+        return PropertiesReader.getInstance().getProperty(PropertiesReader.INPUT_PROPERTY_NAME);
+    }
 }
 
 

@@ -8,7 +8,7 @@ import java.util.Properties;
 
 public final class PropertiesReader {
     
-	public static final String INPUT_PROPERTY_NAME = "inputPath";
+	public static final String INPUT_PROPERTY_NAME = "database";
 	public static final String OUTPUT_PROPERTY_NAME = "outputPath";
 	
 	private Properties prop;
