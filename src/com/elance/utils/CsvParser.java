@@ -17,6 +17,7 @@ public class CsvParser {
         String cvsSplitBy = ";";
         List<Row> rows = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
+        	br.readLine();//skip header row
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(cvsSplitBy);
                 rows.add(new Row(data[0], data[1], data[2], null, data[3]));

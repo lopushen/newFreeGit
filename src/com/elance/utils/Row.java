@@ -15,6 +15,7 @@ public class Row {
         this.sourceType = sourceType;
         this.year = year;
         this.format = format;
+        this.url = url;
     }
     public Row(String companyName, String sourceType, String year, String format) {
         this.companyName = companyName;
@@ -61,4 +62,13 @@ public class Row {
     public void setFormat(String format) {
         this.format = format;
     }
+
+	@Override
+	public String toString() {
+		return "Row [companyName=" + companyName + ", sourceType=" + sourceType
+				+ ", year=" + year + ", format=" + format + ", url=" + url
+				+ "]";
+	}
+    
+    
 }

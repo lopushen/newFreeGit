@@ -14,6 +14,7 @@ public class RowMatcher {
         for (Row inputRow:inputRows)
             for (Row parsedRow:parsedRows) {
                 if (match(inputRow, parsedRow)) {
+                	parsedRow.setFormat(inputRow.getFormat());
                     matchedRows.add(parsedRow);
                 }
             }
@@ -24,6 +25,6 @@ public class RowMatcher {
         return inputRow.getCompanyName().equalsIgnoreCase(parsedRow.getCompanyName()) &&
                 parsedRow.getUrl().endsWith(inputRow.getFormat().toLowerCase()) &&
                 inputRow.getSourceType().equalsIgnoreCase(parsedRow.getSourceType()) &&
-                inputRow.getYear().equalsIgnoreCase(inputRow.getYear());
+                inputRow.getYear().equalsIgnoreCase(parsedRow.getYear());
     }
 }

@@ -115,7 +115,10 @@ public class YearRangePanel extends JPanel {
 
         Integer fromYear = getValueFromInputField(from);
         Integer toYear = getValueFromInputField(to);
-        toYear = (toYear < fromYear) ? fromYear : toYear; 
+        if(toYear < fromYear){
+        	toYear = fromYear;
+        	to.setSelectedItem(toYear);
+        }
 
         for (int i = fromYear; i <= toYear; i++) {
             years.add(String.valueOf(i));
@@ -129,7 +132,9 @@ public class YearRangePanel extends JPanel {
     	if(value.length() > 0){
     		return Integer.parseInt(value);
     	}else{
-    		return Integer.parseInt((String) input.getItemAt(1));
+    		String firstItem = (String) input.getItemAt(1);
+    		input.setSelectedItem(firstItem);
+    		return Integer.parseInt(firstItem);
     	}
     }
 
