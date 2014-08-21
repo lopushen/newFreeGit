@@ -7,5 +7,9 @@
 	<classpathentry kind="lib" path="E:/JavaEE/newfree/lib/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="E:/JavaEE/newfree/lib/pdfbox-app-1.8.2.jar"/>
 	<classpathentry kind="lib" path="E:/JavaEE/newfree/lib/pdfparserapp.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.7.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.7.3-sources.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.7.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

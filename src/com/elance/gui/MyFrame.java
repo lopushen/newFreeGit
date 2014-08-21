@@ -4,7 +4,6 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -16,7 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.border.TitledBorder;
 
-import com.elance.PDFParser.PDFParserApp;
 import com.elance.data.CompanyDataFileParser;
 import com.elance.data.KeyValueData;
 import com.elance.data.ReportTypeFileParser;
@@ -24,7 +22,6 @@ import com.elance.utils.FileScraper;
 import com.elance.utils.PropertiesReader;
 import com.elance.utils.ReportsController;
 import com.elance.utils.Row;
-import com.elance.utils.RowMatcher;
 
 public class MyFrame extends JFrame {
 
@@ -120,7 +117,7 @@ public class MyFrame extends JFrame {
 
 	private void addComponentsToLeftBoxContainer() {
 		leftContainerComponents.add(companyPanel);
-		//leftContainerComponents.add(keyWordsPanel);
+		leftContainerComponents.add(keyWordsPanel);
 		leftContainerComponents.add(formatPanel);
 		leftContainerComponents.add(reportTypePanel);
 		leftContainerComponents.add(yearRangePanel);
@@ -172,14 +169,15 @@ public class MyFrame extends JFrame {
 
 			private void checkNoZeroListSizeResult(List<Row> foundReports){
 				if (foundReports.size() > 0) {
+					FileScraper.downloadReports(foundReports, PropertiesReader.getInstance().getProperty(PropertiesReader.OUTPUT_PROPERTY_NAME),formatPanel.getFormat());
+					
 					resultTablePanel.setData(foundReports);
 					MyFrame.this.paintComponents(MyFrame.this.getGraphics());
-                    FileScraper.downloadReports(foundReports, PropertiesReader.getInstance().getProperty(PropertiesReader.OUTPUT_PROPERTY_NAME));
-//                    PDFParserApp.main();
                 } else {
 					JOptionPane.showMessageDialog(null, "Reports not found");
 				}
 			}
+			
 		});
 
 		return goButton;
