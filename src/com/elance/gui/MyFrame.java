@@ -5,6 +5,7 @@ import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -169,12 +170,38 @@ public class MyFrame extends JFrame {
 
 			private void checkNoZeroListSizeResult(List<Row> foundReports){
 				if (foundReports.size() > 0) {
-					FileScraper.downloadReports(foundReports, PropertiesReader.getInstance().getProperty(PropertiesReader.OUTPUT_PROPERTY_NAME),formatPanel.getFormat());
+					List<String> keywords = keyWordsPanel.getKeyWords();
+					String ouputFolder = PropertiesReader.getInstance().getProperty(PropertiesReader.OUTPUT_PROPERTY_NAME);
+					System.out.println("keywords: "+keywords);
+				
+					// key(Row) - document data, value(Map): key - sentence, value - set of keywords in this sentence 
+					Map<Row, Map<String, Set<String>>> documents = FileScraper.downloadReports(foundReports, ouputFolder, formatPanel.getFormat(), keywords);
 					
-					resultTablePanel.setData(foundReports);
+					print(documents);
+					
+					resultTablePanel.setData(documents.keySet());
 					MyFrame.this.paintComponents(MyFrame.this.getGraphics());
                 } else {
 					JOptionPane.showMessageDialog(null, "Reports not found");
+				}
+			}
+			
+			private void print(Map<Row, Map<String, Set<String>>> documents){
+				
+				for (Row row : documents.keySet()) {
+					System.out.println(row);
+					
+					Map<String, Set<String>> sentencesKeywords = documents.get(row);
+					for (String sentence : sentencesKeywords.keySet()) {
+						System.out.println("sentence: "+sentence);
+						System.out.print("keywords: ");
+						for (String keyword : sentencesKeywords.get(sentence)) {
+							System.out.println(keyword+", ");
+						}
+						System.out.println("\n");
+					}
+					
+					System.out.println("=======================================================================\n");
 				}
 			}
 			

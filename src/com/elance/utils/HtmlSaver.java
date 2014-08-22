@@ -10,6 +10,10 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
@@ -30,7 +34,10 @@ public class HtmlSaver {
 	private String htmlSourceFilePath;
 	private String outputFolder;
 	
-	public HtmlSaver(String outputFileName, String url, String outputFolder){
+	private List<String> keywords;
+	private Map<String, Set<String>> foundedDocuments;
+	
+	public HtmlSaver(String outputFileName, String url, String outputFolder, List<String> keywords){
 		this.url = url;
 		domainName = getDomainName();
 		rootUrl = "http://" + domainName;
@@ -39,6 +46,7 @@ public class HtmlSaver {
 		sourcesFolder = this.outputFolder+"/"+SOURCES_DIR_NAME;
 		createOutputFolder(sourcesFolder);
 		htmlSourceFilePath = String.format("%s/%s.%s", this.outputFolder, domainName, "html");
+		this.keywords = keywords;
 	}
 	
 	public  String getDomainName(){
@@ -51,10 +59,24 @@ public class HtmlSaver {
 		return null;
 	}
 
+	/**
+	 * 
+	 * saves html that contains one of keyword
+	 *
+	 */
 	public void saveHTML()
 			throws IOException, URISyntaxException {
 
 		Document document = Jsoup.connect(url).get();
+		if(keywords.size() > 0){
+			HtmlKeywordsSearcher htmlKeywordsSearcher = new HtmlKeywordsSearcher(document, keywords);
+			foundedDocuments = htmlKeywordsSearcher.getFoundedDocuments();
+			if(foundedDocuments.size() < 1){//no matches
+				return;
+			}
+		}else{
+			foundedDocuments = new LinkedHashMap<>();
+		}
 		saveSourceImages(document);
 		saveSourceCSSFiles(document);
 		saveDOM(document, htmlSourceFilePath);
@@ -170,9 +192,11 @@ public class HtmlSaver {
 		}
 
 	}
+
+	public Map<String, Set<String>> getFoundedDocuments() {
+		return foundedDocuments;
+	}
 	
-//	public static void main(String[] args) throws Exception {
-//		HtmlSaver saver = new HtmlSaver("http://google.com",".");
-//		saver.saveHTML();
-//	}
+	
+	
 }

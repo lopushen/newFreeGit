@@ -2,6 +2,7 @@ package com.elance.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.util.Collection;
 import java.util.List;
 
 import javax.swing.JPanel;
@@ -72,22 +73,24 @@ public class ResultTablePanel extends JPanel {
 		add(scrollPane);
 	}
 
-	private Object[][] listToObjectArray(List<Row> list) {
+	private Object[][] collectionToObjectArray(Collection<Row> list) {
 		Object[][] result = new Object[list.size()][];
 
-		for (int i = 0; i < list.size(); i++) {
+		int i = 0;
+		for (Row row : list) {
 			result[i] = new Object[4];
-			Row row = list.get(i);
 			result[i][0] = row.getCompanyName();
 			result[i][1] = row.getSourceType();
 			result[i][2] = row.getYear();
 			result[i][3] = row.getUrl();
+			i++;
 		}
-
+		
 		return result;
 	}
 
-	public void setData(List<Row> data) {
-		initJTable(listToObjectArray(data));
+	public void setData(Collection<Row> data) {
+		initJTable(collectionToObjectArray(data));
 	}
+	
 }

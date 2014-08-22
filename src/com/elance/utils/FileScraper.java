@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Date: 16.08.14 Time: 21:50
@@ -38,23 +42,28 @@ public class FileScraper {
 		return dir + "/" + year + "_" + url.substring(url.lastIndexOf('/') + 1);
 	}
 
-	public static void downloadReports(List<Row> rows, String dir, String format) {
+	public static Map<Row, Map<String, Set<String>>> downloadReports(List<Row> rows, String dir, String format, List<String> keywords) {
 		switch (format.toLowerCase()) {
 		case "pdf":
-			downloadPdfReports(rows, dir);
-			break;
+			return downloadPdfReports(rows, dir);
 		case "html":
-			downloadHtmlReports(rows, dir);
-			break;
+			return downloadHtmlReports(rows, dir, keywords);
 		}
+		
+		return null;
 	}
 
-	private static void downloadHtmlReports(List<Row> rows, String dir) {
+	private static Map<Row, Map<String, Set<String>>> downloadHtmlReports(List<Row> rows, String dir, List<String> keywords) {
+		Map<Row, Map<String, Set<String>>> documentsSentencesKeywords = new LinkedHashMap<>();
 		for (Row row : rows) {
 			String fileName = row.getCompanyName()+"."+row.getSourceType()+"."+row.getYear();
-			HtmlSaver saver = new HtmlSaver(fileName,row.getUrl(), dir);
+			HtmlSaver saver = new HtmlSaver(fileName,row.getUrl(), dir, keywords);
 			try {
 				saver.saveHTML();
+				Map<String, Set<String>> sentenceKeywords = saver.getFoundedDocuments();
+				if(sentenceKeywords != null){
+					documentsSentencesKeywords.put(row, sentenceKeywords);
+				}
 			} catch (IOException e) {
 				ErrorMessageShower.showError("Can not save file: "+row.getUrl());
 				e.printStackTrace();
@@ -63,15 +72,19 @@ public class FileScraper {
 				e.printStackTrace();
 			}
 		}
+		return documentsSentencesKeywords;
 	}
 
-	private static void downloadPdfReports(List<Row> rows, String dir) {
+	private static Map<Row, Map<String, Set<String>>> downloadPdfReports(List<Row> rows, String dir) {
+		Map<Row, Map<String, Set<String>>> documentsSentencesKeywords = new LinkedHashMap<>();
 		for (Row row : rows) {
 			try {
 				saveFile(row.getYear(), row.getUrl(), dir);
+				documentsSentencesKeywords.put(row, Collections.EMPTY_MAP);//TODO !!!!!!!!!!!!!!!!!!!!!!!!
 			} catch (IOException e) {
 				ErrorMessageShower.showError("Error downloading file from url "+ row.getUrl());
 			}
 		}
+		return documentsSentencesKeywords;
 	}
 }
