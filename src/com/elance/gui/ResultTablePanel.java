@@ -1,13 +1,17 @@
 package com.elance.gui;
 
-import java.awt.BorderLayout;
 import java.awt.Component;
+import java.awt.GridLayout;
 import java.util.Collection;
-import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.border.TitledBorder;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
@@ -21,29 +25,98 @@ public class ResultTablePanel extends JPanel {
 	 */
 	private static final long serialVersionUID = 8555091637741108014L;
 
-	private static final String[] COLUMN_NAMES = { "company name",
+	private static final String[] ROW_COLUMN_NAMES = { "company name",
 			"report type", "year", "URL" };
-	private static final int MIN_COLUMN_WIDTH = 110; 
+	private static final String[] KEYWORDS_COLUMN_NAMES = { "keywords", "sentence"};
 
-	private DefaultTableModel tableModel;
-	private JTable table;
-	private JScrollPane scrollPane;
+	private static final int MIN_COLUMN_WIDTH = 120;
 
+	private DefaultTableModel rowTableModel;
+	private JTable rowTable;
+	private JScrollPane rowScrollPane;
+
+	private DefaultTableModel keywordsTableModel;
+	private JTable keywordsTable;
+	private JScrollPane keywordsScrollPane;
+
+
+	private Map<Row, Map<String, Set<String>>> dat;
+
+	/**
+	 * 
+	 */
 	public ResultTablePanel() {
-		setLayout(new BorderLayout());
 
-		initJTable(new Object[][] {});
+		setLayout(new GridLayout(2, 1));
+		initAndAddTables(new Object[][] {}, new Object[][] {});
 	}
 
-	private void initJTable(Object[][] data) {
-		if (scrollPane != null) {
-			remove(scrollPane);
+	/**
+	 * 
+	 * @param rowData
+	 * @param keywordsData
+	 */
+	private void initAndAddTables(Object[][] rowData, Object[][] keywordsData) {
+		initRowTable(rowData);
+		initKeywordsTable(keywordsData);
+	}
+
+	/**
+	 * 
+	 * @param data
+	 */
+	private void initRowTable(Object[][] data) {
+		if (rowScrollPane != null) {
+			remove(rowScrollPane);
 		}
-		tableModel = new DefaultTableModel(data, COLUMN_NAMES);
-		table = new JTable(tableModel);
+		rowTableModel = new DefaultTableModel(data, ROW_COLUMN_NAMES);
+		rowTable = new JTable(rowTableModel);
 
-		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+		rowTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+		setColumnsWidthByContent(rowTable, data);
 
+		rowTable.getSelectionModel().addListSelectionListener(
+				new RowTableSelectionListener());
+		
+		if(data.length > 0){
+			rowTable.setRowSelectionInterval(0, 0);
+			showKeywordTableForSelectedRow(0);
+		}
+		
+		rowScrollPane = new JScrollPane(rowTable);
+
+		rowScrollPane.setBorder(new TitledBorder("Documents"));
+
+		add(rowScrollPane);
+	}
+
+	/**
+	 * 
+	 * @param data
+	 */
+	private void initKeywordsTable(Object[][] data) {
+		if (keywordsScrollPane != null) {
+			remove(keywordsScrollPane);
+		}
+		
+		keywordsTableModel = new DefaultTableModel(data, KEYWORDS_COLUMN_NAMES);
+		keywordsTable = new JTable(keywordsTableModel);
+
+		keywordsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+		setColumnsWidthByContent(keywordsTable, data);
+		keywordsScrollPane = new JScrollPane(keywordsTable);
+
+		keywordsScrollPane.setBorder(new TitledBorder("Keywords"));
+
+		add(keywordsScrollPane);
+	}
+
+	/**
+	 * 
+	 * @param table
+	 * @param data
+	 */
+	private void setColumnsWidthByContent(JTable table, Object[][] data) {
 		for (int column = 0; column < table.getColumnCount(); column++) {
 			TableColumn tableColumn = table.getColumnModel().getColumn(column);
 			int preferredWidth = tableColumn.getMinWidth();
@@ -63,17 +136,20 @@ public class ResultTablePanel extends JPanel {
 				}
 			}
 
-			if(data.length < 1){
-				preferredWidth = (preferredWidth < MIN_COLUMN_WIDTH) ? MIN_COLUMN_WIDTH : preferredWidth;
+			if (data.length < 1) {
+				preferredWidth = (preferredWidth < MIN_COLUMN_WIDTH) ? MIN_COLUMN_WIDTH
+						: preferredWidth;
 			}
 			tableColumn.setPreferredWidth(preferredWidth);
 		}
-
-		scrollPane = new JScrollPane(table);
-		add(scrollPane);
 	}
 
-	private Object[][] collectionToObjectArray(Collection<Row> list) {
+	/**
+	 * 
+	 * @param list
+	 * @return
+	 */
+	private Object[][] rowCollectionToObjectArray(Collection<Row> list) {
 		Object[][] result = new Object[list.size()][];
 
 		int i = 0;
@@ -85,12 +161,74 @@ public class ResultTablePanel extends JPanel {
 			result[i][3] = row.getUrl();
 			i++;
 		}
-		
+
 		return result;
 	}
 
-	public void setData(Collection<Row> data) {
-		initJTable(collectionToObjectArray(data));
+	/**
+	 * 
+	 * @param keywordsSentences
+	 * @return
+	 */
+	private Object[][] keywordsCollectionToObjectArray(
+			Map<String, Set<String>> keywordsSentences) {
+		if(keywordsSentences.size() < 1){
+			return new Object[][]{};
+		}
+		Object[][] result = new Object[keywordsSentences.size()][];
+
+		int i = 0;
+		for (String sentence : keywordsSentences.keySet()) {
+			result[i] = new Object[2];
+			result[i][1] = sentence;
+			String buff = "";
+			for (String keyword : keywordsSentences.get(sentence)) {
+				buff += ", " + keyword;
+			}
+			buff = (buff.length() < 1) ? buff : buff.substring(2);
+			result[i][0] = buff;
+			i++;
+		}
+
+		return result;
+	}
+
+	public void setKeywordsData(Map<String, Set<String>> keywordsSentences) {
+		keywordsCollectionToObjectArray(keywordsSentences);
+	}
+
+	public void setData(Map<Row, Map<String, Set<String>>> data) {
+		dat = data;
+		
+		Object[][] rowData = rowCollectionToObjectArray(data.keySet());
+		initRowTable(rowData);
+		
+		Object[][] keywordsData = null;
+		for (Row str : dat.keySet()) {
+			keywordsData = keywordsCollectionToObjectArray(dat.get(str));
+			break;
+		}
+		initKeywordsTable(keywordsData);
 	}
 	
+	private void showKeywordTableForSelectedRow(int selectedRowIndex){
+		int i = 0;
+		for (Row row : dat.keySet()) {
+			if (i == selectedRowIndex) {
+				Object[][] keywordsData = keywordsCollectionToObjectArray(dat.get(row));
+				initKeywordsTable(keywordsData);
+				break;
+			}
+			i++;
+		}
+	}
+
+	private class RowTableSelectionListener implements ListSelectionListener {
+
+		@Override
+		public void valueChanged(ListSelectionEvent e) {
+			showKeywordTableForSelectedRow(rowTable.getSelectedRow());
+			MyFrame.repaintFrame();
+		}
+	}
 }

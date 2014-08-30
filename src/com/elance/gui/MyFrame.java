@@ -53,6 +53,8 @@ public class MyFrame extends JFrame {
 	private int frameWidth = 850;
 	private int frameHeight = 720;
 	
+	private static MyFrame myFrame;
+	
 	public MyFrame() {
 
 		setTitle("Reports");
@@ -76,6 +78,7 @@ public class MyFrame extends JFrame {
 		parentContainer.add(rightContainerComponents);
 		add(parentContainer);
 
+		myFrame = this;
 	}
 
 	private void initData() {
@@ -178,9 +181,8 @@ public class MyFrame extends JFrame {
 					Map<Row, Map<String, Set<String>>> documents = FileScraper.downloadReports(foundReports, ouputFolder, formatPanel.getFormat(), keywords);
 					
 					print(documents);
-					
-					resultTablePanel.setData(documents.keySet());
-					MyFrame.this.paintComponents(MyFrame.this.getGraphics());
+					resultTablePanel.setData(documents);
+					repaintFrame();
                 } else {
 					JOptionPane.showMessageDialog(null, "Reports not found");
 				}
@@ -208,5 +210,11 @@ public class MyFrame extends JFrame {
 		});
 
 		return goButton;
+	}
+	
+	public static void repaintFrame(){
+		if(myFrame != null){
+			myFrame.paintComponents(myFrame.getGraphics());
+		}
 	}
 }
