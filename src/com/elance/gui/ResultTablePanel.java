@@ -208,7 +208,10 @@ public class ResultTablePanel extends JPanel {
 			keywordsData = keywordsCollectionToObjectArray(dat.get(str));
 			break;
 		}
-		initKeywordsTable(keywordsData);
+		
+		if(keywordsData != null){
+			initKeywordsTable(keywordsData);
+		}
 	}
 	
 	private void showKeywordTableForSelectedRow(int selectedRowIndex){

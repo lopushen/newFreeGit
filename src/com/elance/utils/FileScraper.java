@@ -61,7 +61,7 @@ public class FileScraper {
 			try {
 				saver.saveHTML();
 				Map<String, Set<String>> sentenceKeywords = saver.getFoundedDocuments();
-				if(sentenceKeywords != null && sentenceKeywords.size() > 0){
+				if(sentenceKeywords != null){
 					documentsSentencesKeywords.put(row, sentenceKeywords);
 				}
 			} catch (IOException e) {

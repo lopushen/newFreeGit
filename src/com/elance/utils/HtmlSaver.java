@@ -72,6 +72,7 @@ public class HtmlSaver {
 			HtmlKeywordsSearcher htmlKeywordsSearcher = new HtmlKeywordsSearcher(document, keywords);
 			foundedDocuments = htmlKeywordsSearcher.getFoundedDocuments();
 			if(foundedDocuments.size() < 1){//no matches
+				foundedDocuments = null;
 				return;
 			}
 		}else{
