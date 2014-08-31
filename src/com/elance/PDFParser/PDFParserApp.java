@@ -14,6 +14,7 @@ import org.apache.pdfbox.util.PDFTextStripper;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
@@ -80,15 +81,26 @@ public class PDFParserApp {
 
     private static String downloadPdf(String copyTo, String filename) {
        String parsedText = "";
+        COSDocument cosDoc = null;
         try {
             PDFParser parser = new PDFParser(new FileInputStream(new File(copyTo + filename)));
             parser.parse();
-            COSDocument cosDoc = parser.getDocument();
+            cosDoc = parser.getDocument();
             PDFTextStripper pdfStripper = new PDFTextStripper();
             PDDocument pdDoc = new PDDocument(cosDoc);
             parsedText = pdfStripper.getText(pdDoc);
         } catch (Exception e) {
             ErrorMessageShower.showError("Error downloading PDF " + filename);
+        }
+        finally {
+            if (cosDoc!=null) {
+                try {
+                    cosDoc.close();
+                } catch (IOException e) {
+                    ErrorMessageShower.showError("Error closing PDF " + filename);
+                }
+            }
+
         }
         return parsedText;
     }

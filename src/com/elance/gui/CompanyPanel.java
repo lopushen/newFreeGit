@@ -1,11 +1,5 @@
 package com.elance.gui;
 
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.util.Collection;
-import java.util.Set;
-import java.util.Vector;
-
 import javax.swing.Box;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -13,6 +7,11 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.util.Collection;
+import java.util.Set;
+import java.util.Vector;
 
 public class CompanyPanel extends JPanel {
 
@@ -82,7 +81,7 @@ public class CompanyPanel extends JPanel {
 	}
 	
 	public String getCompanyName(){
-		return companiesList.getItemAt(0);
+		return (String)companiesList.getSelectedItem();
 	}
 	
 	
