@@ -28,20 +28,16 @@ public class PDFParserApp {
     public static HttpClient client = new HttpClient();
     public static Map<Row, Map<String, Set<String>>> parse(List<Row> companies, List<String> keyWords, String dir) {
         Map<Row, Map<String, Set<String>>> companyKeywordMap = new HashMap<>();
-        String copyTo = dir + "/";
         if (keyWords == null || keyWords.isEmpty()) {
-            for (Row company : companies) {
-                companyKeywordMap.put(company, new HashMap<String, Set<String>>());
-                String url = company.getUrl();
-                String filename = company.getYear() + url.substring(url.lastIndexOf("/") + 1).trim();
-                downloadPhoto(url, copyTo, filename);
-                String parsedText = "";
-                parsedText = downloadPdf(copyTo, filename);
+            for (Row row : companies) {
+                companyKeywordMap.put(row, new HashMap<String, Set<String>>());
             }
             return companyKeywordMap;
         }
         client.getParams().setSoTimeout(10000);
         client.getParams().setConnectionManagerTimeout(10000L);
+        String copyTo = dir + "/";
+
         int counter = 0;
 
         for (Row company : companies) {
@@ -50,8 +46,7 @@ public class PDFParserApp {
             System.out.println("Searching for pdf #: " + counter);
             String url = company.getUrl();
             String filename = company.getYear() + url.substring(url.lastIndexOf("/") + 1).trim();
-            downloadPhoto(url, copyTo, filename);
-            String parsedText = "";
+            String parsedText = downloadPhoto(url, copyTo, filename);
             parsedText = downloadPdf(copyTo, filename);
             parsedText = parsedText.replaceAll("\\r", " ");
             parsedText = parsedText.replaceAll("\\\\r", " ");
@@ -84,14 +79,14 @@ public class PDFParserApp {
     }
 
     private static String downloadPdf(String copyTo, String filename) {
-        String parsedText = "";
+       String parsedText = "";
         try {
             PDFParser parser = new PDFParser(new FileInputStream(new File(copyTo + filename)));
             parser.parse();
             COSDocument cosDoc = parser.getDocument();
             PDFTextStripper pdfStripper = new PDFTextStripper();
             PDDocument pdDoc = new PDDocument(cosDoc);
-
+            parsedText = pdfStripper.getText(pdDoc);
         } catch (Exception e) {
             ErrorMessageShower.showError("Error downloading PDF " + filename);
         }
