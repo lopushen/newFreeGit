@@ -1,12 +1,13 @@
 package com.elance.utils;
 
+import com.elance.PDFParser.PDFParserApp;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -45,7 +46,7 @@ public class FileScraper {
 	public static Map<Row, Map<String, Set<String>>> downloadReports(List<Row> rows, String dir, String format, List<String> keywords) {
 		switch (format.toLowerCase()) {
 		case "pdf":
-			return downloadPdfReports(rows, dir);
+			return downloadPdfReports(rows, keywords, dir);
 		case "html":
 			return downloadHtmlReports(rows, dir, keywords);
 		}
@@ -75,16 +76,8 @@ public class FileScraper {
 		return documentsSentencesKeywords;
 	}
 
-	private static Map<Row, Map<String, Set<String>>> downloadPdfReports(List<Row> rows, String dir) {
-		Map<Row, Map<String, Set<String>>> documentsSentencesKeywords = new LinkedHashMap<>();
-		for (Row row : rows) {
-			try {
-				saveFile(row.getYear(), row.getUrl(), dir);
-				documentsSentencesKeywords.put(row, Collections.EMPTY_MAP);//TODO !!!!!!!!!!!!!!!!!!!!!!!!
-			} catch (IOException e) {
-				ErrorMessageShower.showError("Error downloading file from url "+ row.getUrl());
-			}
-		}
-		return documentsSentencesKeywords;
-	}
+	private static Map<Row, Map<String, Set<String>>> downloadPdfReports(List<Row> rows, List<String> keywords, String dir) {
+            return PDFParserApp.parse(rows, keywords, dir);
+
+    }
 }

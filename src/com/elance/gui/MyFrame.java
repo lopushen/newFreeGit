@@ -1,5 +1,19 @@
 package com.elance.gui;
 
+import com.elance.data.CompanyDataFileParser;
+import com.elance.data.KeyValueData;
+import com.elance.data.ReportTypeFileParser;
+import com.elance.utils.FileScraper;
+import com.elance.utils.PropertiesReader;
+import com.elance.utils.ReportsController;
+import com.elance.utils.Row;
+
+import javax.swing.Box;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.border.TitledBorder;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
@@ -8,21 +22,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
-
-import javax.swing.Box;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.border.TitledBorder;
-
-import com.elance.data.CompanyDataFileParser;
-import com.elance.data.KeyValueData;
-import com.elance.data.ReportTypeFileParser;
-import com.elance.utils.FileScraper;
-import com.elance.utils.PropertiesReader;
-import com.elance.utils.ReportsController;
-import com.elance.utils.Row;
 
 public class MyFrame extends JFrame {
 
@@ -64,8 +63,8 @@ public class MyFrame extends JFrame {
 		
 		setLocation(screen.width/2-frameWidth/2,screen.height/2-frameHeight/2);
 		setSize(frameWidth, frameHeight);
-
-		setVisible(true);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		initData();

@@ -1,10 +1,6 @@
 package com.elance.gui;
 
-import java.awt.Component;
-import java.awt.GridLayout;
-import java.util.Collection;
-import java.util.Map;
-import java.util.Set;
+import com.elance.utils.Row;
 
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -15,8 +11,11 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
-
-import com.elance.utils.Row;
+import java.awt.Component;
+import java.awt.GridLayout;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Set;
 
 public class ResultTablePanel extends JPanel {
 
@@ -203,7 +202,7 @@ public class ResultTablePanel extends JPanel {
 		Object[][] rowData = rowCollectionToObjectArray(data.keySet());
 		initRowTable(rowData);
 		
-		Object[][] keywordsData = null;
+		Object[][] keywordsData = new Object[0][2];
 		for (Row str : dat.keySet()) {
 			keywordsData = keywordsCollectionToObjectArray(dat.get(str));
 			break;
